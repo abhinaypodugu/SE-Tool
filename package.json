@@ -1,0 +1,49 @@
+{
+	"name": "errortest",
+	"displayName": "errortest",
+	"description": "test out errors",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:errortest.helloWorld",
+		"onCommand:extension.StackOverflow View"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "errortest.helloWorld",
+				"title": "Hello World"
+			},
+			{
+				"command": "extension.StackOverflow View",
+				"title": "StackOverflow View"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.53.0",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.3.0-dev.20210324",
+		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"he": "^1.2.0"
+	}
+}
