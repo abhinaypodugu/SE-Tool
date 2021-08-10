@@ -1,5 +1,3 @@
-<iframe width="900" height="506" src="https://www.youtube.com/embed/RiSmAxzH5OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 # errortest README
 
 This is the README for your extension "StackOverflow View". After writing up a brief description, we recommend including the following sections.
